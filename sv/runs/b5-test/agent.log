@@ -1,0 +1,206 @@
+[tool] Read File
+[tool] status: InProgress
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=16
+[tool] status: Completed
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=8
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=38
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=69
+[tool] Run Command
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=44
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=346
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=94
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=425
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=105
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=318
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Write File
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=1658
+[tool] status: Pending
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=729
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=249
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=243
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=540
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=249
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=269
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=508
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=248
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=325
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+Now the notes and explanations before pass 3.
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=707
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=414
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=154
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=376
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=394
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=444
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=165
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=126
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=65
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=64
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=59
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=98
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=257
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+Now the report, then the final verify.
+[tool] Write File
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=1666
+[tool] status: Pending
+[tool] status: Completed
+[tool] Run Command
+[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=71
+[tool] status: InProgress
+[tool] status: InProgress
+[tool] status: Completed
+The edit did not measurably improve the model's Swedish on the holdout set. I submitted it anyway, as the task requires, and reported the null result. `verify.py` also reports one failure that I did not cause, explained after the table.
+
+**Holdout results** (from `final_eval.py`, run once, on the frozen edit):
+
+| task | n | metric | orig | edit | delta | 95% CI of delta |
+|---|---|---|---|---|---|---|
+| lm | 49 | bits/char | 1.896 | 1.895 | −0.001 | [−0.002, +0.000] |
+| scala | 50 | acc | 0.560 | 0.560 | +0.000 | [+0.000, +0.000] |
+| | | choice_nll | 1.072 | 1.106 | +0.034 | [+0.013, +0.057] |
+| gen | 50 | sv_rate | 0.580 | 0.580 | +0.000 | [+0.000, +0.000] |
+| gen | 50 | repeat_rate | 0.040 | 0.040 | +0.000 | [+0.000, +0.000] |
+
+- **Drift:** KL on generic prompts is 0.0012 nats. The independent langdetect check also gives Swedish 0.58 → 0.58.
+- **Size:** the edit changes 1,280 weights (0.00048%), and all 5 passes are used.
+- **Not met:** the Swedish bits-per-character gain is too small (its interval touches 0), and the Swedish answer rate did not move.
+- **Cost:** on the grammaticality task (scala), accuracy is unchanged, but the log-loss of the correct choice got slightly worse, and that interval excludes 0.
+
+**Hypothesis.** The model's Swedish depends on a few late language-specific neurons, and its main failure is answering Swedish prompts in Norwegian, Danish or English. The probe found two Swedish neurons (L13 n72, L14 n1542) and two others: L15 n459 fires on Norwegian, L14 n1594 on Danish. The Norwegian one fires exactly where an answer turns Norwegian ("Det" → " er").
+
+**Edit.** I zeroed the output columns of the Norwegian and Danish neurons, so they no longer write anything into the model. Both are nearly silent on Swedish and English text.
+
+**What the DEV passes showed:**
+- The first idea failed: doubling the two Swedish neurons made Swedish text less likely (bits per character +0.053).
+- Removing the Norwegian/Danish neurons works mechanically: Norwegian and Danish text get 2–2.5% less likely, and English barely moves (+0.26%).
+- In generation, that edit turned one Norwegian answer of 30 into Swedish. A second apparent switch was a labelling artifact (a repeated Danish-looking line). Neither effect showed up on the holdout.
+
+**Audit failure.** `verify.py` says `final_eval` ran on 2 distinct edits. The extra log entry is dated 06:26:29 with no edit. That is before this run had any edit (the first was written at about 06:27), and I ran `final_eval.py` only once, at 06:30. It is most likely another session running `final_eval.py` without `WSP_RUN_DIR`: the default run pointer (`sv/runs/CURRENT`) points at this run, and the b2-test run logged its own `final_eval` a minute later. That entry compared the unedited model with itself, so nothing was chosen from it. I left the log untouched rather than edit an audit file. All other checks pass, including `edit.py` reproducing the edit byte for byte.
+
+The pass-2 probe arrays stay in the harness's `cache/` folder (about 1.4 GB).
+
+Report: `/opt/dlami/nvme/work/attempt1/sv/runs/b5-test/REPORT.md`[INFO] [KRS] <-- GenerateAssistantResponseCommand done totalEvents=241
+

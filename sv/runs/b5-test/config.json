@@ -1,0 +1,32 @@
+{
+ "run": "b5-test",
+ "budget": 5,
+ "data": "tiny",
+ "tasks": [
+  "lm",
+  "scala",
+  "gen"
+ ],
+ "max_items_per_pass": 1024,
+ "max_new_tokens": 48,
+ "created": "2026-11-19T06:21:22+00:00",
+ "n_dev_per_task": 30,
+ "harness_sha256": {
+  "harness.py": "5357f4d17aa2092d10e6740438440a2037e693bcb986ac184c1a3c67ac657dfa",
+  "build_edited.py": "9fc35d35c900f6a340354232046a34f9b22df3e9b4c3e1158fc05107ce300bf5",
+  "final_eval.py": "0103600cef8ef97f29aa20c8ed514d1279d9a5455071a4e0439a9b17bb01dfea",
+  "init_run.py": "f1edf7350638053c5f7c753748b249cc097ac6759ee470c420bf7650035557b4",
+  "make_data.py": "e4bfbe977f81e21b7173d51fcb1970aca974e32bd487b9b17078832275d9cad2",
+  "langdetect_rates.py": "6f8479c95d557c6efa17a5b8585b9f58b3bb13e29972c6218adc1eebe0a0a7ae",
+  "verify.py": "1150a787e93940270633c36800abb60810e049ec47d33d52621cad93c11f017d"
+ },
+ "amendments": [
+  {
+   "time": "2026-11-19T06:40:41+00:00",
+   "file": "verify.py",
+   "old_sha256": "4438a7a7f919b16513f6a399ff39386478681e2f9a662d9b4f2c188ce3cf3a1c",
+   "new_sha256": "1150a787e93940270633c36800abb60810e049ec47d33d52621cad93c11f017d",
+   "reason": "verify.py fixed: a 'none' (baseline) final_eval entry no longer counts as a second edit; approved by the user"
+  }
+ ]
+}

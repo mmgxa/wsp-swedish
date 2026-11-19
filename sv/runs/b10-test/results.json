@@ -1,0 +1,201 @@
+{
+ "run": "b10-test",
+ "budget": 10,
+ "passes_used": 9,
+ "edit": {
+  "pct_changed": 0.000716155562356381,
+  "changed_weights": 1920,
+  "tensors": 2,
+  "overlay_hash": "b2de7462228fdec0",
+  "model_sha256": "7856d413ed3466e3b4ed2fd6bc6e40b1d9bbd9f79827247f89b9ed1d96f86511"
+ },
+ "tasks": {
+  "lm": {
+   "n": 49,
+   "orig": {
+    "n": 49,
+    "bpc": 1.8960789438500911,
+    "nll_per_token": 4.537034502902396,
+    "n_tokens": 5779
+   },
+   "edit": {
+    "n": 49,
+    "bpc": 1.8954505856231072,
+    "nll_per_token": 4.535530935255461,
+    "n_tokens": 5779
+   },
+   "delta_bpc": -0.0006283582269841492,
+   "delta_bpc_ci": [
+    -0.0030750904180692484,
+    0.0018366383213881058
+   ],
+   "bpc_ci": {
+    "orig": [
+     1.8167442022492024,
+     1.9817740296907382
+    ],
+    "edit": [
+     1.815298714021167,
+     1.9827462738385608
+    ]
+   }
+  },
+  "scala": {
+   "n": 50,
+   "orig": {
+    "n": 50,
+    "acc": 0.56,
+    "choice_nll": 1.0723674740362925
+   },
+   "edit": {
+    "n": 50,
+    "acc": 0.54,
+    "choice_nll": 1.027097116061415
+   },
+   "acc_ci": {
+    "orig": [
+     0.4230578680014353,
+     0.6883801278976466
+    ],
+    "edit": [
+     0.40398634328388083,
+     0.6703056539821737
+    ]
+   },
+   "delta_acc": -0.020000000000000018,
+   "delta_acc_ci": [
+    -0.06000000000000005,
+    0.0
+   ],
+   "delta_choice_nll": -0.04527035797487744,
+   "delta_choice_nll_ci": [
+    -0.07764155270786834,
+    -0.01498132746766512
+   ]
+  },
+  "gen": {
+   "n": 50,
+   "orig": {
+    "n": 50,
+    "sv_rate": 0.58,
+    "en_rate": 0.06,
+    "da_no_rate": 0.04,
+    "other_rate": 0.32,
+    "empty_rate": 0.0,
+    "repeat_rate": 0.04,
+    "mean_chars": 57.44
+   },
+   "edit": {
+    "n": 50,
+    "sv_rate": 0.58,
+    "en_rate": 0.08,
+    "da_no_rate": 0.04,
+    "other_rate": 0.3,
+    "empty_rate": 0.0,
+    "repeat_rate": 0.1,
+    "mean_chars": 62.8
+   },
+   "sv_rate_ci": {
+    "orig": [
+     0.4423319668777783,
+     0.7062520276543307
+    ],
+    "edit": [
+     0.4423319668777783,
+     0.7062520276543307
+    ]
+   },
+   "delta_sv_rate": 0.0,
+   "delta_sv_rate_ci": [
+    -0.05999999999999994,
+    0.05999999999999994
+   ],
+   "repeat_rate_ci": {
+    "orig": [
+     0.011038652660826577,
+     0.13460337877954667
+    ],
+    "edit": [
+     0.04347512399157111,
+     0.2136049033478839
+    ]
+   },
+   "delta_repeat_rate": 0.060000000000000005,
+   "delta_repeat_rate_ci": [
+    -0.020000000000000004,
+    0.15999999999999998
+   ]
+  }
+ },
+ "kl_generic_prompts_nats": 0.014552686818910842,
+ "generation_examples": [
+  {
+   "prompt": "Vilket dotterföretag etablerades år 1978?",
+   "orig": "ovce\nDet var en period av en tidig och viktig period för många familjer och individer i USA och Kanada.",
+   "edit": "ovce\nDet var en period av en tidig period av utveckling och det var det första företaget."
+  },
+  {
+   "prompt": "Till vilken grad domineras Byasjöns avrinningsområde av skog?",
+   "orig": "ovce\nByasjöns avrinningsområde",
+   "edit": "ovce\nByasjöns avrinningsområde"
+  },
+  {
+   "prompt": "Vad sysselsatte sig Berner med efter pensioneringen?",
+   "orig": "ovce\nBerner var en avancerad och en avancerad som var en avancerad och en avancerad.",
+   "edit": "ovce\nBerner var en avancerad och en viktig del av många olika yrken."
+  },
+  {
+   "prompt": "Vilka är kvalificeringskraven för VM?",
+   "orig": "ovce det bästa!",
+   "edit": "ovce det bästa!"
+  },
+  {
+   "prompt": "Vem är arkitekten bakom den nuvarande kyrkobyggnaden?",
+   "orig": "ovce\nArkitekten bakom den nuvarande kyrkobyggnaden är **Här är det mest sannat**",
+   "edit": "ovce\nArkitekten bakom den nuvarande kyrkobyggnaden är **Här är det som är en kyrka i **St. John the Apostle**"
+  },
+  {
+   "prompt": "Vilken position på Billboard-listan uppnådde \"Dancing in the Dark\"?",
+   "orig": "ovce\n\"Dancing in the Dark\"",
+   "edit": "ovce\n\"Dancing in the Dark\""
+  },
+  {
+   "prompt": "Vem är den svenska översättaren av Brandys bok \"I Polen, dvs. ingenstans ...\"?",
+   "orig": "**Sverige översättaren av Brandys bok \"I Polen, dvs. ingenstans ...\"**",
+   "edit": "**Sveriges översättare av Brandys bok \"I Polen, dvs. ingenstans ...\"** är **Sveriges översättare av bokens första del.**"
+  },
+  {
+   "prompt": "Vad är vikten på en nyfödd krabbätarsäl?",
+   "orig": "ovce\nViktigt för en nyfödd krabbätarsäl är en **viktig** för en nyfödd krabbätarsäl** är en kraftig** för en nyfödd**** är en kraft",
+   "edit": "ovce\nViktigt för en nyfödd krabbätarsäl är en **viktig** för en nyfödd krabbätarsäl** är en kraftig** för en nyfödd**** är en kraft"
+  },
+  {
+   "prompt": "Vilken är en samling kåserier författade av Erik Lundegård?",
+   "orig": "ovce\nErik Lundegård är en **En samling av kåserier och verk som har skrivit och skrivit flera kåserier och verk**",
+   "edit": "ovce\nErik Lundegård är en **En samling av kåserier som har skapat en unik och engagerad samling av kåserier som har utvecklatsen av kåserier som har en"
+  },
+  {
+   "prompt": "Med vilka klassiska kvinnogestalter identifierar sig Stampa?",
+   "orig": "ovce\nStampa är en digital representation av en person som har en unik och en unik personlighet.",
+   "edit": "ovce\nStampa är en personlig och en person som är passionerad med en personlighet som är en person som är en personlighet som är en person som är en personlighet som är en personlighet som är en personlighet som"
+  }
+ ],
+ "langdetect": {
+  "orig": {
+   "n": 50,
+   "sv": 0.58,
+   "en": 0.1,
+   "da": 0.0,
+   "no": 0.06,
+   "other": 0.26
+  },
+  "edit": {
+   "n": 50,
+   "sv": 0.6,
+   "en": 0.1,
+   "da": 0.0,
+   "no": 0.06,
+   "other": 0.24
+  }
+ }
+}

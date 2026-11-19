@@ -1,0 +1,22 @@
+{
+ "tensors": {
+  "model.layers.14.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 640,
+   "max_abs": 0.126953125,
+   "mean_abs_over_changed": 0.0060220276936888695
+  },
+  "model.layers.15.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 640,
+   "max_abs": 0.06689453125,
+   "mean_abs_over_changed": 0.011815093457698822
+  }
+ },
+ "changed_weights": 1280,
+ "total_weights": 268098176,
+ "pct_changed": 0.00047743704157092063,
+ "n_tensors": 2,
+ "overlay_hash": "1f13980da1ef24c5",
+ "model_sha256": "ddae77765fb3c085e9da974055c897f351307862decf8754c3f224c1a86b5fda"
+}

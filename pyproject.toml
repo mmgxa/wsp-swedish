@@ -1,0 +1,16 @@
+[project]
+name = "wsp-swedish"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.2.0",
+    "euroeval[generative]>=18.4.0",
+    "huggingface-hub>=2.4.0",
+    "langdetect>=1.0.9",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "reportlab>=5.1.0",
+    "tokenizers>=0.23.3",
+    "torch==2.13.0",
+    "transformers>=5.23.0",
+]

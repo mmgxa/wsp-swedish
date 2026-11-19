@@ -1,0 +1,40 @@
+{
+ "tensors": {
+  "model.layers.12.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 640,
+   "max_abs": 0.0498046875,
+   "mean_abs_over_changed": 0.01230110228061676
+  },
+  "model.layers.13.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 640,
+   "max_abs": 0.09814453125,
+   "mean_abs_over_changed": 0.009440881200134754
+  },
+  "model.layers.14.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 1280,
+   "max_abs": 0.138671875,
+   "mean_abs_over_changed": 0.0073334770277142525
+  },
+  "model.layers.16.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 3840,
+   "max_abs": 0.1298828125,
+   "mean_abs_over_changed": 0.010921214707195759
+  },
+  "model.layers.17.mlp.down_proj.weight": {
+   "numel": 1310720,
+   "changed": 5760,
+   "max_abs": 0.0908203125,
+   "mean_abs_over_changed": 0.010072989389300346
+  }
+ },
+ "changed_weights": 12160,
+ "total_weights": 268098176,
+ "pct_changed": 0.004535651894923746,
+ "n_tensors": 5,
+ "overlay_hash": "473d5ecd84a756c1",
+ "model_sha256": "2e34730352d612b9cd4b352e8f9bc9ff2dc06e96d3886164678a394aeb90507f"
+}

@@ -1,0 +1,103 @@
+[tool] Reading PROMPT.md:1, listing b2-test
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test && cat forward_log.jsonl config.json notes.md explanations.md; ls work; ls /opt/dlami/nvme/work/attempt1/sv /opt/dlami/nvme/work/attempt1/u...
+[tool] status: Completed
+[tool] Reading harness.py:1, gemma_math_first_message.txt:1
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv && cat README.md | head -80; echo ----; cat final_eval.py; echo ----; cat verify.py; echo; ls -R data | head -50
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv && cat data/tiny/meta.json; for t in gen lm scala; do echo "== $t"; wc -l data/tiny/dev/$t.jsonl; head -c 1500 data/tiny/dev/$t.jsonl; echo; done; cat A...
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python -c " import sys; sys.path.insert(0,'sv'); import harness as H H.stat...
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && f=$(uv run --offline python -c "import transformers.models.gemma3.modeling_gemma3 as m; print(m.__file__)") && grep -n "class Gemma3RMSNorm" -A 22 $f &&...
+[tool] status: Completed
+[tool] Creating task list: Swedish weight-space edit on gemma-3-270m-it, run b2-test...
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && free -g | head -2; df -h /opt/dlami/nvme | tail -1; export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python -c " import sys,...
+[tool] status: Completed
+[tool] Creating weights_analysis.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python sv/runs/b2-test/work/weights_analysis.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test && cat >> notes.md <<'EOF' ## Before pass 1 (2026-11-19) - Current edit: none (`edit_hash=none`, no overlay). Pass is `which="orig"`, so th...
+[tool] status: Completed
+[tool] Creating pass1_probe.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && time uv run --offline python sv/runs/b2-test/work/pass1_probe.py 2>&1 | grep -v Warning | ta...
+[tool] status: Completed
+[tool] Creating analyze_pass1.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && uv run --offline python sv/runs/b2-test/work/analyze_pass1.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test/work && python3 - <<'EOF' p='pass1_probe.py'; s=open(p).read() s=s.replace("A = np.zeros((n_text, 18, 2048), np.float32) # sum over positio...
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python sv/runs/b2-test/work/pass1_probe.py 2>&1 | grep -v Warning | tail -3...
+[tool] status: Completed
+[tool] Creating analyze_pass1_v2.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python sv/runs/b2-test/work/analyze_pass1_v2.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python - <<'EOF' import sys,re; sys.path.insert(0,'sv'); import harness as ...
+[tool] status: Completed
+[tool] Creating select_neurons.py
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && uv run --offline python sv/runs/b2-test/work/select_neurons.py
+[tool] status: Completed
+[tool] status: Completed
+Now the edit script.
+[tool] Creating edit.py
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python sv/runs/b2-test/work/edit.py && uv run --offline python -c "import s...
+[tool] status: Completed
+[tool] status: Completed
+[tool] Completing #1, #2
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test && cat >> notes.md <<'EOF' ## Before pass 2 - Current edit (`work/edit.py`, edit_hash `473d5ecd84a756c1`): zero the `down_proj` column (the...
+[tool] status: Completed
+[tool] Creating pass2_score.py
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python sv/runs/b2-test/work/pass2_score.py 2>&1 | grep -v "Warning\|Loading...
+[tool] status: Completed
+Pass 2 refutes the hypothesis: the edit makes Swedish worse on the 30 unseen DEV texts (+4.6% bpc, 29 of 30 texts worse). Recording this before freezing.
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test && cat >> notes.md <<'EOF' ## After pass 2 (budget spent, 2/2) - Correction to the plan above: `default/dev/scala.jsonl` shares no ids with...
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test && sed -i 's/shares no ids with tiny DEV scala, so `scala` had 124 items\n//' notes.md && uv run --offline python -c " import json a={json....
+[tool] status: Completed
+[tool] Editing notes.md
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python -c "import sys; sys.path.insert(0,'sv'); import harness as H; H.stat...
+[tool] status: Completed
+[tool] status: Completed
+[tool] Creating REPORT.md
+[tool] Running: cd /opt/dlami/nvme/work/attempt1 && export WSP_RUN_DIR=$PWD/sv/runs/b2-test HF_HUB_OFFLINE=1 && uv run --offline python sv/verify.py 2>&1 | grep -v "Warning\|Loading weights" | tee /tmp/ve...
+[tool] status: Completed
+[tool] status: Completed
+[tool] Running: cd /opt/dlami/nvme/work/attempt1/sv/runs/b2-test && { printf '```\n'; cat /tmp/verify_b2.txt; printf '```\n'; } > /tmp/v.md && sed -i 's/^(pasted below)$//' REPORT.md && cat /tmp/v.md >> R...
+[tool] status: Completed
+[tool] Completing #3, #4, #5
+[tool] status: Completed
+[tool] Goal complete
+[tool] status: Completed
+The run failed. The one edit I could justify makes the model's Swedish worse, on DEV and on HOLDOUT. I submitted it anyway, as I had decided before the second (last) forward pass. `verify.py` reports 0 failures and 0 warnings and confirms both passes are used.
+
+**Results (HOLDOUT, from `final_eval.py`, run once on the frozen edit):**
+
+| task | n | metric | orig | edit | delta | 95% CI |
+|---|---|---|---|---|---|---|
+| lm | 49 | bits/char | 1.896 | 1.989 | +0.093 | [+0.084, +0.102] |
+| scala | 50 | acc | 0.560 | 0.560 | +0.000 | [+0.000, +0.000] |
+| | | choice_nll | 1.072 | 1.143 | +0.071 | [+0.031, +0.112] |
+| gen | 50 | sv_rate | 0.580 | 0.520 | -0.060 | [-0.140, +0.000] |
+| gen | 50 | repeat_rate | 0.040 | 0.060 | +0.020 | [-0.040, +0.100] |
+
+- **Drift:** KL on generic prompts is 0.015 nats.
+- **Independent language check:** langdetect gives a Swedish rate of 0.58 for both models.
+- **Size of the edit:** 0.0045% of the weights changed.
+
+The only success criteria met are the ones about limits: accuracy did not drop, KL stayed under 0.1, and the edit and pass count stayed small. Every Swedish target was missed.
+
+**Hypothesis:** In the probe pass, some MLP neurons in layers 12–17 lowered the logit of the actual next token on 80–100% of the Swedish texts, while doing almost nothing on English. Their output vectors favour tokens from other languages (Spanish/Italian words, English content words). My guess was that removing them would make Swedish text more likely. The second pass refuted this: Swedish bits per character got 4.6% worse on 30 unseen DEV texts, and 29 of the 30 texts got worse. The method only measures each neuron's direct push on the output, and it got the sign wrong. These neurons must matter for Swedish through later layers and the final norm.
+
+**Edit:** `work/edit.py` sets the output vector (`down_proj` column) of 19 MLP neurons in layers 12–17 to zero, which removes those neurons completely. It touches 5 tensors and changes 12,160 weights. Embeddings and the final norm are untouched.
+
+**Rule slip:** twice I ran bare `python3` instead of `uv run --offline python`. One call edited the text of a script, and the other did nothing. Neither loaded the model or the weights. `REPORT.md` discloses both.
+
+The full report is at `/opt/dlami/nvme/work/attempt1/sv/runs/b2-test/REPORT.md`.
